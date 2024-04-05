@@ -4,6 +4,12 @@ import './style.css';
 const customTitle =
   'font-weight:bold; font-size:1.5rem; background-color:#dfffdf;';
 
+//Variables de géneros musicales
+const popRock = 'pop/rock';
+const rock = 'rock';
+const hardRock = 'hard rock';
+const clasic = 'música clásica';
+
 //Definición de interfaz para grupo musical
 interface GrupoMusical {
   nombreGrupo: string;
@@ -21,7 +27,7 @@ const beatles: GrupoMusical = {
   compositor: 'Paul McCartney',
   añoFundo: 1960,
   activo: false,
-  generoMusical: 'pop/rock ',
+  generoMusical: popRock,
 };
 // Queen
 const queen: GrupoMusical = {
@@ -30,7 +36,7 @@ const queen: GrupoMusical = {
   compositor: 'Freddie Mercury',
   añoFundo: 1970,
   activo: false,
-  generoMusical: 'rock ',
+  generoMusical: rock,
 };
 // AC / DC
 const acdc: GrupoMusical = {
@@ -39,7 +45,7 @@ const acdc: GrupoMusical = {
   compositor: 'Brian Johnson',
   añoFundo: 1973,
   activo: false,
-  generoMusical: 'hard rock',
+  generoMusical: hardRock,
 };
 // Ludwig van Beethoven
 const lvB: GrupoMusical = {
@@ -48,16 +54,16 @@ const lvB: GrupoMusical = {
   compositor: ' Ludwig van Beethoven',
   añoFundo: 1770,
   activo: false,
-  generoMusical: 'música clásica ',
+  generoMusical: clasic,
 };
 // The Rolling Stones
 const rollingS: GrupoMusical = {
   nombreGrupo: 'The Rolling Stones',
   cantante: ' The Rolling Stones',
-  compositor: ' Ludwig van Beethoven',
+  compositor: ' The Rolling Stones',
   añoFundo: 1962,
   activo: false,
-  generoMusical: 'rock',
+  generoMusical: rock,
 };
 
 console.log(`%c${beatles.nombreGrupo}`, customTitle);
